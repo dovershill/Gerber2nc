@@ -158,6 +158,11 @@ def main(args: list[str] = None) -> int:
     setup_logging(verbose=opts.verbose, quiet=opts.quiet)
     logger = logging.getLogger(__name__)
 
+    # Validate cut depth - must be negative (below surface)
+    if opts.cut_depth > 0:
+        logger.warning(f"Cut depth {opts.cut_depth} is positive - converting to -{opts.cut_depth}")
+        opts.cut_depth = -opts.cut_depth
+
     # Determine output filename
     output_file = opts.output or Path(f"{opts.project.name}.nc")
 

@@ -43,6 +43,7 @@ htmlcov/
 # Generated files
 *.nc
 *.gcode
+*.map
 
 # OS files
 .DS_Store
