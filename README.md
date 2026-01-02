@@ -101,6 +101,26 @@ Milling parameters:
 
 ## Development
 
+### Dependencies
+
+This project uses `pyproject.toml` for dependency management (PEP 621 standard):
+
+**Core dependencies** (required to run):
+- `shapely>=2.0.0` - Geometry operations for toolpath generation
+
+**Development dependencies** (optional, for testing/linting):
+- `pytest>=7.0.0` - Test framework
+- `pytest-cov>=4.0.0` - Coverage reporting
+- `mypy>=1.0.0` - Static type checking
+
+Install with:
+```bash
+pip install -e .           # Core dependencies only
+pip install -e ".[dev]"    # Core + development dependencies
+```
+
+The `pyproject.toml` also configures pytest and mypy behavior, so no separate config files are needed.
+
 ### Quick Start with Makefile
 
 ```bash
