@@ -41,8 +41,8 @@ dev = [
 gerber2nc = "gerber2nc.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/gerber2nc"
-Repository = "https://github.com/yourusername/gerber2nc"
+Homepage = "https://github.com/dovershill/Gerber2nc"
+Repository = "https://github.com/dovershill/Gerber2nc"
 
 [tool.setuptools.packages.find]
 include = ["gerber2nc*"]
