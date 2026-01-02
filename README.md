@@ -101,6 +101,32 @@ Milling parameters:
 
 ## Development
 
+### Quick Start with Makefile
+
+```bash
+# Create virtual environment and install dev dependencies
+make venv
+source venv/bin/activate
+make install-dev
+
+# Run tests
+make test
+
+# Run tests with coverage
+make test-cov
+
+# Type checking
+make type-check
+
+# Clean artifacts
+make clean
+
+# See all available commands
+make help
+```
+
+### Manual Setup
+
 ```bash
 # Install with dev dependencies
 pip install -e ".[dev]"
